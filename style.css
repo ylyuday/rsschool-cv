@@ -15,11 +15,14 @@ body {
 
 * {
     box-sizing: border-box;
-
 }
 
 a {
     text-decoration: none;
+}
+
+a:hover {
+    color: brown;
 }
 
 .container {
@@ -44,10 +47,9 @@ a {
 .nav-link {
     padding: 0 20px;
     line-height: 50px;
-}
+    color: rgb(76, 43, 43);
 
-.nav-link {
-    transition: .3s;
+    transition: 0.5s ease;
 }
 
 .one-container {
@@ -70,7 +72,6 @@ a {
     align-items: center;
 }
 
-
 #skills,
 #english,
 #projects,
@@ -88,7 +89,6 @@ hr {
     margin: 40px 40px;
     height: 2px;
     width: 80%;
-
 }
 
 .img-foto {
@@ -104,10 +104,8 @@ hr {
 }
 
 .footer-link {
-
     padding: 0 120px;
     line-height: 120px;
-
 }
 
 html {
@@ -138,7 +136,11 @@ html {
         display: flex;
         flex-direction: column;
         align-items: center;
+    }
 
+    .wrapper {
+        display: flex;
+        flex-direction: column;
     }
 
     .section {
@@ -151,31 +153,39 @@ html {
     }
 
     .footer-link {
-
         padding: 0 60px;
         line-height: 120px;
-
     }
-
 }
 
 @media (min-width: 479px) and (max-width: 767px) {
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+
     .nav-list {
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
+    }
 
+    .section-footer {
+        display: flex;
+        flex-direction: column;
     }
 
     .footer-link {
         padding: 0 60px;
         line-height: 120px;
-
     }
-
 }
 
 @media (min-width: 320px) and (max-width: 480px) {
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+    }
 
     .nav-list {
         display: flex;
@@ -197,7 +207,6 @@ html {
     }
 
     .section-footer {
-
         display: flex;
         flex-direction: column;
     }
